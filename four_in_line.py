@@ -24,6 +24,9 @@ class Game:
 
         parametros:
             c --> columna a la que se desea asignar el punto
+        
+        retorno:
+            True --> Si la jugada es ganadora
         """
         if c == None or c < 1 or c > self.w:
             return
@@ -44,6 +47,9 @@ class Game:
         parametros:
             r, c --> fila y columna en la que se encuentra la jugada actual
             turn --> turno actual
+        
+        retorno:
+            True --> Si encuentra cuatro en linea
         """
         score_row = 0
         score_col = 0
